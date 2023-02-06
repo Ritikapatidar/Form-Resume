@@ -1,0 +1,46 @@
+.mainHead{
+    text-align: center;
+margin: auto;
+text-decoration: underline
+}
+    .card {
+        max-width: 900px;
+        margin: auto;
+        height: auto;
+        padding: 10px;
+        background-color: #4169e117;
+    }
+    .card img {
+        width: 140px;
+        float: right;
+        border-radius: 50%;
+        margin-bottom: 4px;;
+    }
+    .heading{
+        margin-bottom: 0%;
+        font-style: normal;
+        text-decoration: underline;
+       background-color: rgb(126, 105, 146);
+    }
+    ul{
+        margin-top: 0px;
+    }
+    /* .personal td {
+        width: 190px;
+    } */
+    .edu {
+        padding: 10px;
+        margin: 0px;
+        border-collapse: collapse;
+    }
+    .edu .eduTr {
+        border: 1px solid gray;
+        padding: 7px;
+    }
+    p{
+        margin: 0px;
+        word-spacing: 3px;
+    }
+    .column p{
+        margin: 3px;
+    }
