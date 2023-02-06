@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="empformStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Employee Details Form</h2>
+    <form action="" method="post" name="myForm">
+        <table>
+            <tr>
+                <th><label for="name">Name: </label> </th>
+                <td> <input type="text" id="name" name="fname" pattern="[A-Za-z]{2,20}" required>
+                   
+                </td>
+            </tr>
+
+            <tr>
+                <th> <label for="age">Age: </label></th>
+                <td><input type="number" id="age" required>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="gender">Gender: </label></th>
+                <td><label for="male">Male</label><input type="radio" name="gender" id="male" value="Male" required>
+                    <label for="female">Female</label><input type="radio" name="gender" id="female" value="Female">
+                    <label for="other">Other</label><input type="radio" name="gender" id="other" value="Other">
+               
+                </td>
+            </tr>
+            <tr>
+                <th> <label for="designation">Designation: </label></th>
+                <td><input type="text" id="designation" pattern="[A-Za-z]{1,30}" required>
+      
+                </td>
+            </tr>
+            <tr>
+                <th><label for="salary">Salary: </label></th>
+                <td> <input type="number" id="salary" required>
+                   
+                </td>
+            </tr>
+            <tr>
+                <th><label for="location">Location: </label></th>
+                <td><input type="text" id="location" list="mylist"  required>
+                    <datalist id="mylist">
+                        <option value="Ahmdabad"></option>
+                        <option value="Ratlam"></option>
+                        <option value="Udaipur"></option>
+                        <option value="Madhya-Pradesh"></option>
+                        <option value="Mumbai"></option>
+                    </datalist>
+                   
+                </td>
+            </tr>
+            <tr>
+                <th><label for="email">Email: </label></th>
+                <td><input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                   
+                </td>
+            </tr>
+            <tr>
+                <th><label for="dateOfJoin">Date of Joining: </label></th>
+                <td><input type="date" id="dateOfJoin" required>
+                    <p id="dateErr"></p>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="contact">Contact No.: </label></th>
+                <td><input type="tel" pattern="[0-9]{10}"
+                     id="contact" required>
+                    <p id="contactErr"></p>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script href="getInfo.js"></script>
+</body>
+</html>

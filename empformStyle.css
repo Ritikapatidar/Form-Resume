@@ -1,0 +1,32 @@
+form{
+    align-items: center;
+    background-color: gainsboro;
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+}
+table{
+    margin: auto;
+    font-size: 18px;
+    text-align: left;
+    max-width: 50%;
+}
+table{
+    padding: 10px;
+}
+tr{
+    width: 20px;
+}
+th{
+    width: 50%;
+}
+input[type=submit]
+{
+    font-size: 17px;;
+    padding:7px;
+}
+#nameErr, #ageErr, #genderErr, #salaryErr, #locationErr, #mailErr,  #designationErr, #dateErr, #contactErr {
+    color: red;
+    margin: auto;
+    font-size: 15px;
+}
